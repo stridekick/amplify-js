@@ -318,11 +318,11 @@ var AuthClass = /** @class */ (function() {
 				cognitoClientId: cognitoAuthParams.cognitoClientId,
 			});
 			// **NOTE** - Remove this in a future major release as it is a breaking change
-			var d = [];
+			var d_1 = [];
 			urlListener(function(_a) {
 				var url = _a.url;
-				if (!d.includes(url)) {
-					d.push(url);
+				if (!d_1.includes(url)) {
+					d_1.push(url);
 					_this._handleAuthResponse(url);
 				}
 			});
